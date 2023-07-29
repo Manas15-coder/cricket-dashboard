@@ -1,38 +1,144 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Kumbh+Sans:wght@700&family=Lora:ital,wght@0,400;0,600;0,700;1,600&family=News+Cycle:wght@700&family=Noticia+Text:ital,wght@1,700&family=Nunito+Sans:wght@300;400&family=Open+Sans:ital,wght@0,300;0,500;0,700;1,700&family=Play:wght@400;700&family=Playfair+Display:wght@500;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rampart+One&family=Roboto+Mono:wght@400;500;600;700&family=Roboto+Slab:wght@300&family=Roboto:wght@100;700&family=Sora:wght@500;600&family=Teko:wght@600&family=Urbanist:ital,wght@1,500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://cdn4.vectorstock.com/i/1000x1000/28/93/cricket-stadium-background-vector-15522893.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow-y: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+.table-responsive{
+  /* From https://css.glass */
+
+height: 100%;
+max-height: 400px;
+scroll-behavior: smooth;
+}
+.table{
+  background: rgba(0, 0, 0, 0.947);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+.filter{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+h1{
+  margin-top: 10px;
+  text-align: center;
+  color:#ffff;
+
+}
+select,.filter{ 
+  margin: 10px 5px;
+  color:#fff;
+  padding: 10px 5px;
+  /* From https://css.glass */
+background: rgba(0, 0, 0, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.btn{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:
+  #EFCA08;
+  border-radius: 15px;
+  border:none;
+  background-color: #2128a2;
+  width: 100%;
+  font-weight: bold;
+  max-width: 400px;
+  padding: 20px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+}
+.schedule{
+  margin-top: 10%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+select option{
+  color:#0A0A08;
+}
+
+#banner{
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.display-1{
+  font-weight: bold;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.timer{
+  z-index: 1;
+  left:0;
+  top:50%;
+  position: fixed;
+  z-index: 1;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 15px;
+  color:#ffff;
+  max-width: 400px;
+  padding: 40px 20px;
+  background-color: #2128a2;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.banner-btn{
+  color:
+  #EFCA08;
+  border-radius: 15px;
+  border:none;
+  background-color: #2128a2;
+  width: 100%;
+  font-weight: bold;
+  max-width: 400px;
+  padding: 20px 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.banner-btn:hover{
+  color:#fff;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.loader{
+  color:#2128a2;
+  font-weight: 800;
+  margin-top: 20%;
   align-items: center;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loader h2{
+  font-weight: bold;
+}
+.nav-link{
+  background-color: #EFCA08;
+  padding: 10px 5px;
+  font-weight: bold;
+  color:#ffff;
+  border-radius: 15px;
+}.close-btn{
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  align-items: end;
+  justify-content: end;
 }
